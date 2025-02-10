@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfefb;
+    position: relative;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.tenor-gif-embed {
+    display: none;
+}
+
+.container .tenor-gif-embed {
+    max-width : 500px;
+}
+
+.container .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+    position: relative;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px; 
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+#first-no {
+    display: block;
+}
+
+#yes-gif1 {
+    display: block;
+}
+
+#first-nope {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29,61,121);
+
+}
+
+.white-text {
+    color: white;
+}
+
+.moving-gif img {
+    position: absolute;
+    width: 50px;
+    animation: moveGif 0.5s linear infinite;
+    pointer-events: none;
+}
+
+.romantic-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    color: #ff5b5b; 
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 0.05em; 
+}
+
+.romantic-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
